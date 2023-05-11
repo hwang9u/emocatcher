@@ -4,13 +4,13 @@
 
 import torch
 from torch.utils.data import DataLoader
-from emocatcher.trainer import train, evaluate
+from trainer import train, evaluate
 from adabelief_pytorch import AdaBelief
-from emocatcher.utils.env import create_config, save_model, create_folder
-from emocatcher.utils.criterion import LabelSmoothingLoss
-from emocatcher.model import EmoCatcher
-from emocatcher.dataset import RAVDESSMelS
-from emocatcher.dataloader import get_meta, split_meta, mels2batch
+from utils.env import create_config, save_model, create_folder
+from utils.criterion import LabelSmoothingLoss
+from model import EmoCatcher
+from dataset import RAVDESSMelS
+from dataloader import get_meta, split_meta, mels2batch
 import pickle
 import matplotlib.pyplot as plt
 import matplotlib.pyplot as plt

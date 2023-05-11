@@ -1,8 +1,7 @@
 import torch
 from tqdm import tqdm
 from time import sleep
-import time
-from .utils.env import create_folder
+from utils.env import create_folder
 
 def train(train_dloader, model,  optimizer, crit, epoch, device, max_norm = None):
     model.train()

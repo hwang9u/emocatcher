@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 import glob
 import os
-from .utils.audio_tools import gvad
+from utils.audio_tools import gvad
 
 
 def get_meta(dataset_dir):

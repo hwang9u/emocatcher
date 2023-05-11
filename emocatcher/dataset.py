@@ -5,7 +5,7 @@ from torch.utils.data import Dataset
 import matplotlib.pyplot as plt
 import glob
 import librosa
-from .utils.audio_tools import gvad
+from utils.audio_tools import gvad
 import numpy as np
 
 class RAVDESSMelS(Dataset):
