@@ -32,7 +32,7 @@
 * Loss function: ```LabelSmoothingLoss``` ([source](https://github.com/pytorch/pytorch/issues/7455#issuecomment-513062631))
 * Optimizer: ```adabelief_pytorch.AdaBelief``` ([source](https://github.com/juntang-zhuang/Adabelief-Optimizer))
 * Scheduler: ```torch.optim.lr_scheduler.ReduceLROnPlateau```
-* Please check `run.py` for more detailed hyper-parameters.
+* Please check `train.py` for more detailed hyper-parameters.
 
 
 <br>
