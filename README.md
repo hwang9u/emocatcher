@@ -44,7 +44,7 @@
 ####  Accuracy & Loss curve
 
 <center>
-<img src="./results/holdout/img/metric_curves.jpg" width="900px" height="300px">
+<img src="./output/holdout/img/metric_curves.jpg" width="900px" height="300px">
 </center>  
 <br>
 
@@ -67,7 +67,7 @@
 
 
 <center>
-<img src="./results/holdout/img/cm.jpg" width="900px" height="400px">
+<img src="./output/holdout/img/cm.jpg" width="900px" height="400px">
 </center>
 
 * ❗️ We can see that the the model is most confused about the happy class.
@@ -77,13 +77,13 @@
 <br>
 
 ### 5-Fold CV
-Due to the small size of the dataset, there was a concern that the hold-out results might be biased, so I attempted to perform 5-fold cross-validation.
+Due to the small size of the dataset, there was a concern that the hold-out output might be biased, so I attempted to perform 5-fold cross-validation.
 
 <br>
 
 #### Accuracy & Loss curve
 <center>
-<img src="./results/cv5/img/metric_curves.jpg" width="900px" height="500px">
+<img src="./output/cv5/img/metric_curves.jpg" width="900px" height="500px">
 </center>  
 
 <br>
@@ -106,17 +106,17 @@ Due to the small size of the dataset, there was a concern that the hold-out resu
 <br>
 
 #### Confusion Matrix
-* The worst-performing and best-performing results are compared through the following figure.
-* The confusion matrices for all folds can be found in `/results/cv5/img/`
+* The worst-performing and best-performing output are compared through the following figure.
+* The confusion matrices for all folds can be found in `/output/cv5/img/`
 
 #### Lowest in the Fold 2
 <center>
-<img src="./results/cv5/img/cm_f2.jpg" width="900px" height="400px">
+<img src="./output/cv5/img/cm_f2.jpg" width="900px" height="400px">
 </center>
 
 #### Highest in the Fold 4
 <center>
-<img src="./results/cv5/img/cm_f4.jpg" width="900px" height="400px">
+<img src="./output/cv5/img/cm_f4.jpg" width="900px" height="400px">
 </center>
 
 * ❗️ There was a significant gap between the highest and lowest values, especially the accuracy for "happy" class was notably low.
@@ -128,7 +128,7 @@ Due to the small size of the dataset, there was a concern that the hold-out resu
 
 ## Outro
 * With EmoCatcher, I achieved a test accuracy of 87.15% on a hold-out dataset and mean test accuracy of 84.17% under 5-fold CV.
-* I have personally tested this on the CPU. According to the PyTorch documentation, it is not guaranteed that results will be reproducible across different devices. ***Since I haven't conducted many experiments yet, I think more experiments should be carried out to find consistent parameters to increase reproducibility of the above results.***
+* I have personally tested this on the CPU. According to the PyTorch documentation, it is not guaranteed that output will be reproducible across different devices. ***Since I haven't conducted many experiments yet, I think more experiments should be carried out to find consistent parameters to increase reproducibility of the above output.***
 * There was overfitting of the train data, which was probably due to small dataset size. (Insufficient data size may have made performance estimates noisy.)
  Given the circumstances, it was a good enough performance.
 * When I listened and guessed it, my accuracy was about 60%.😅 I think it was difficult to detect emotional characteristics contained in the speech due to cultural differences. (I'm Korean.)  
@@ -138,21 +138,21 @@ Due to the small size of the dataset, there was a concern that the hold-out resu
 
 
 ## Appendix
-The following figures are the results of the best model on the hold-out: `results/holdout/model/best_model_0.8715_0.8655.pth`
+The following figures are the output of the best model on the hold-out: `output/holdout/model/best_model_0.8715_0.8655.pth`
 
 #### Attention Weights
 * We can check which parts the attention mechanism focuses on for each class through the following figure.
 
 <br>
 <center>
-<img src="./results/holdout/img/attention_weights.jpg" width="900px" height="400px">
+<img src="./output/holdout/img/attention_weights.jpg" width="900px" height="400px">
 </center>
 
 #### Predicted Examples
 * Plot title format: true emotion class/predicted emotion class(predicted probability x 100 %) 
 <br>
 <center>
-<img src="./results/holdout/img/predicted_examples.jpg" width="900px" height="700px">
+<img src="./output/holdout/img/predicted_examples.jpg" width="900px" height="700px">
 </center>
 
 
