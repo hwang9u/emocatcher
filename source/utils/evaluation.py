@@ -26,7 +26,7 @@ def create_confusion_matrix(model, dataloader, n_class):
     model.eval()
     for x_test, y_test, L in dataloader:
         y_pred_test = model(x_test,L).argmax(dim = 1)
-        cm +=ConfusionMatrix( num_classes=n_class )(y_pred_test, y_test)
+        cm +=ConfusionMatrix( num_classes=n_class, task="multiclass" )(y_pred_test, y_test)
     print("Accuracy: {}".format(cm.trace()/ len(dataloader.dataset)) )
     return cm
 
