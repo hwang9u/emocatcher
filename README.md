@@ -145,14 +145,14 @@ The following figures are the output of the best model on the hold-out: `output/
 
 <br>
 <center>
-<img src="./output/holdout/img/attention_weights.jpg" width="900px" height="400px">
+<img src="./output/holdout/img/attention_weights.jpg" width="900px" height="500px">
 </center>
 
 #### Predicted Examples
 * Plot title format: true emotion class/predicted emotion class(predicted probability x 100 %) 
 <br>
 <center>
-<img src="./output/holdout/img/predicted_examples.jpg" width="900px" height="700px">
+<img src="./output/holdout/img/predicted_examples.jpg" width="900px" height="800px">
 </center>
 
 
