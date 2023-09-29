@@ -160,12 +160,12 @@ The following figures are the output of the best model on the hold-out: `output/
 ### + Cite
 If you want to use this code, please cite as follows:
 ```
-@misc{hwang9u-emo-catcher,
-  author = {Kim Seonjoo},
-  title = {emo-catcher},
+@misc{hwang9u-emocatcher,
+  author = {Kim, Seonju},
+  title = {emocatcher},
   year = {2023},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/hwang9u/emo-catcher}},
+  howpublished = {\url{https://github.com/hwang9u/emocatcher}},
 }
 ```
